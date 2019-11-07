@@ -1,0 +1,29 @@
+<!doctype html>
+<title>blockAsm</title>
+
+
+<xml id="toolbox" style="display: none">
+    <category name="Modifiers">
+    <block type="mov"></block>
+    <block type="add"></block>
+    <block type="sub"></block>
+    <block type="imul"></block>
+
+    </category>
+    <category name="registers">
+        <block type="rax"></block>
+        <block type="rbx"></block>
+        <block type="rcx"></block>
+        <block type="rdi"></block>
+        <block type="rsi"></block>
+        <block type="rsp"></block>
+    </category>
+    <category name="flow">
+        <block type="start"></block>
+        <block type="label_declare"></block>
+        <block type="label_name"></block>
+    </category>
+  </xml>
+
+{% block editor %}
+{% endblock %}

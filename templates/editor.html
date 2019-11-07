@@ -1,0 +1,22 @@
+
+{% extends "index.html" %}
+
+{% block editor %}
+<script src="static/blockly/blockly_compressed.js"></script>
+<script src="static/blockly/blocks_compressed.js"></script>
+<script src="static/blockly/msg/js/en.js"></script>
+
+<script src="static/asmBlocks/modifiers.js"></script>
+<script src="static/asmBlocks/registers.js"></script>
+<script src="static/asmBlocks/flow.js"></script>
+
+
+<div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+
+  <script>
+    var workspace = Blockly.inject('blocklyDiv',
+        {toolbox: document.getElementById('toolbox')});
+  </script>
+
+
+{%endblock%}
